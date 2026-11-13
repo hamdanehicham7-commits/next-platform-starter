@@ -1,0 +1,108 @@
+{
+  "source": "source/source.mp4",
+  "credit": "Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY",
+  "chip": "GTA VI",
+  "note": "Time ranges come from an automated scene analysis on a 2-second grid; snap them to the real cuts (work/scenes.json) once the source file is available.",
+  "clips": [
+    {
+      "id": "01", "slug": "jasons-past",
+      "start": 0.0, "end": 14.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["JASON'S PAST", "REVEALED"],
+      "captions": "auto",
+      "thumb": {"t": 11.0, "lines": ["JASON'S", "DARK PAST"], "side": "left", "focus_x": 0.6},
+      "title": "Jason's Past REVEALED 😳 Then Lucia Calls… | GTA 6 Launch Trailer",
+      "description": "The GTA 6 launch trailer opens with Jason admitting he \"got in some trouble in the army\" and that nobody gives loans to people like him. He's polishing boats at a marina when the phone rings: a free call from Lucia Caminos. This is where it all starts.",
+      "tags": ["#GTA6", "#GTAVI", "#Jason", "#Lucia", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "02", "slug": "vice-city-is-back",
+      "start": 14.0, "end": 25.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["VICE CITY", "IS BACK"],
+      "captions": null,
+      "thumb": {"t": 21.5, "lines": ["VICE CITY", "IS BACK"], "side": "left"},
+      "title": "Vice City Has NEVER Looked This Good 🌴 GTA 6",
+      "description": "The music kicks in and Vice City lights up: the skyline at night, a crew in a green convertible, an iguana under the overpass and a pink-and-orange sunset over the water. Eleven seconds that show why everyone is waiting for November 19.",
+      "tags": ["#GTA6", "#GTAVI", "#ViceCity", "#Leonida", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "03", "slug": "the-vault-heist",
+      "start": 25.0, "end": 37.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["THE VAULT", "HEIST"],
+      "captions": null,
+      "thumb": {"t": 36.0, "lines": ["THE VAULT", "HEIST"], "side": "left"},
+      "title": "The GTA 6 Heist Crew Goes ALL IN 💰 (Vault Scene)",
+      "description": "Tactical gear in the swamp at sunset, brass knuckles, a night jump out of a helicopter, an airboat through the marsh — and then two silhouettes walking through a giant vault door with paper flying everywhere. The heists in GTA 6 look huge.",
+      "tags": ["#GTA6", "#GTAVI", "#Heist", "#GTA6Trailer", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "04", "slug": "jason-and-lucia",
+      "start": 37.0, "end": 45.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["JASON", "& LUCIA"],
+      "captions": null,
+      "thumb": {"t": 38.0, "lines": ["JASON", "& LUCIA"], "side": "left"},
+      "title": "Jason & Lucia: Partners in Crime ❤️‍🔥 GTA 6",
+      "description": "A quiet sunset in an apartment over the ocean, a packed neon club, a truck racing under an airplane wing, and the two of them side by side in a container yard. Love story or crime story? In GTA 6 it's both.",
+      "tags": ["#GTA6", "#GTAVI", "#Jason", "#Lucia", "#ViceCity", "#Shorts"]
+    },
+    {
+      "id": "05", "slug": "vice-city-after-dark",
+      "start": 45.0, "end": 53.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["VICE CITY", "AFTER DARK"],
+      "captions": null,
+      "thumb": {"t": 50.0, "lines": ["AFTER", "DARK"], "side": "left"},
+      "title": "Vice City After Dark Is WILD 🪩 GTA 6 Launch Trailer",
+      "description": "A bar fight, a tense moment against a tiled wall, two performers on stage under pink lights and a red sports car tearing through the city at night. Vice City nightlife looks dangerous in the best way.",
+      "tags": ["#GTA6", "#GTAVI", "#ViceCity", "#Nightlife", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "06", "slug": "insane-stunts",
+      "start": 53.0, "end": 61.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["INSANE", "STUNTS"],
+      "captions": null,
+      "thumb": {"t": 58.0, "lines": ["INSANE", "STUNTS"], "side": "left"},
+      "title": "GTA 6 Stunts Look INSANE 🏍️ Wheelies, Huge Jumps & Cops",
+      "description": "Police sirens through the palm trees, a dirt bike wheelie across a bridge, a massive jump into the sky and a motorcycle cutting through a dark alley. The bikes in GTA 6 are going to be a lot of fun.",
+      "tags": ["#GTA6", "#GTAVI", "#Stunts", "#DirtBike", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "07", "slug": "pure-chaos",
+      "start": 61.0, "end": 69.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["PURE", "CHAOS"],
+      "captions": null,
+      "thumb": {"t": 64.0, "lines": ["PURE", "CHAOS"], "side": "left"},
+      "title": "From Ankle Monitor to Pure CHAOS 💥 GTA 6",
+      "description": "A blinking ankle monitor, a rooftop explosion over the skyline, a full-auto shootout — and a wing walker on a biplane trailing red smoke over a crowded beach. Eight seconds, zero calm.",
+      "tags": ["#GTA6", "#GTAVI", "#Explosion", "#GTA6Trailer", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "08", "slug": "wildest-characters",
+      "start": 69.0, "end": 77.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["MEET THE", "WILD ONES"],
+      "captions": null,
+      "thumb": {"t": 74.0, "lines": ["GOLD GUNS", "PINK MASKS"], "side": "left"},
+      "title": "The Wildest Characters in GTA 6 🐍 Gold Guns & Pink Masks",
+      "description": "A tattooed giant in the gym, a guy relaxing with a huge snake, and two women in pink balaclavas holding gold rifles — then another explosion lights up the street. Vice City is full of characters you won't forget.",
+      "tags": ["#GTA6", "#GTAVI", "#Characters", "#ViceCity", "#RockstarGames", "#Shorts"]
+    },
+    {
+      "id": "09", "slug": "are-we-gonna-be-okay",
+      "start": 77.0, "end": 85.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["ARE WE GONNA", "BE OKAY?"],
+      "captions": "auto",
+      "thumb": {"t": 84.0, "lines": ["ARE WE GONNA", "BE OKAY?"], "side": "left"},
+      "title": "\"Are We Gonna Be Okay?\" 💔 GTA 6's Most Emotional Moment",
+      "description": "\"Are we gonna be okay?\" — \"We've stuck together through everything. We've just gotta get through this.\" In the middle of all the chaos, the launch trailer slows down for Jason and Lucia on a balcony at sunset.",
+      "tags": ["#GTA6", "#GTAVI", "#Jason", "#Lucia", "#GTA6Story", "#Shorts"]
+    },
+    {
+      "id": "10", "slug": "the-final-moments",
+      "start": 85.0, "end": 99.0, "layout": "square", "focus": [[0, 0.5]],
+      "hook": ["THE FINAL", "MOMENTS"],
+      "captions": "auto",
+      "thumb": {"t": 88.0, "lines": ["NOVEMBER", "19"], "side": "left"},
+      "title": "GTA 6 Launch Trailer ENDING 🔥 November 19, 2026",
+      "description": "Crashing through a skyscraper window, hanging from a helicopter over the city, a police chase, a sniper scope — and a fall into a neon pool before the words everyone waited years for: Grand Theft Auto VI, November 19, 2026.",
+      "tags": ["#GTA6", "#GTAVI", "#November19", "#GTA6Trailer", "#RockstarGames", "#Shorts"]
+    }
+  ]
+}

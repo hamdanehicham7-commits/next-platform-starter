@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render vertical clips + thumbnails + a titles/descriptions sheet from clips.json.
 
-usage: build.py --project <project dir> [--only 01,04] [--preview] [--no-video] [--no-thumbs]
+usage: build.py --project <project dir> [--only 01,04] [--preview] [--no-video] [--no-thumbs] [--sheet-only]
 
 clips.json (in the project dir):
 {
@@ -441,15 +441,27 @@ def make_cover(frame, clip, out_jpg, fonts_dir, chip):
 
 def write_sheet(spec, out_dir, done):
     lines = ["# GTA VI clips — titles, descriptions, thumbnails", ""]
+    if spec.get("note"):
+        lines += [f"> {spec['note']}", ""]
     for c in spec["clips"]:
         base = f"clip{c['id']}_{c['slug']}"
         d = done.get(c["id"], {})
+        th = c.get("thumb", {})
+
+        def have(name):
+            return "" if (out_dir / name).exists() else " _(not rendered yet)_"
+
         lines += [
             f"## Clip {c['id']} — {c.get('title', '')}",
             "",
-            f"- **Video:** `{base}.mp4`" + (f" ({d['dur']:.1f} s)" if d.get("dur") else ""),
-            f"- **Thumbnail (16:9):** `{base}_thumb.jpg`  ·  **Cover (9:16):** `{base}_cover.jpg`",
-            f"- **Source time:** {c['start']:.2f}–{c['end']:.2f} s",
+            f"- **Source time:** {int(c['start'] // 60)}:{c['start'] % 60:04.1f} – {int(c['end'] // 60)}:{c['end'] % 60:04.1f}"
+            f" ({c['end'] - c['start']:.0f} s)",
+            f"- **Video:** `{base}.mp4`" + have(f"{base}.mp4"),
+            f"- **Headline on the clip:** {' / '.join(c.get('hook') or [])}",
+            f"- **Thumbnail (16:9):** `{base}_thumb.jpg`" + have(f"{base}_thumb.jpg")
+            + f" · **Cover (9:16):** `{base}_cover.jpg`" + have(f"{base}_cover.jpg"),
+            f"- **Thumbnail text:** {' / '.join(th.get('lines') or [])}"
+            + (f" — frame at {int(th['t'] // 60)}:{th['t'] % 60:04.1f}" if "t" in th else ""),
             "",
             "**Title**",
             "",
@@ -474,6 +486,7 @@ def main():
     ap.add_argument("--preview", action="store_true")
     ap.add_argument("--no-video", action="store_true")
     ap.add_argument("--no-thumbs", action="store_true")
+    ap.add_argument("--sheet-only", action="store_true", help="only write output/clips.md")
     a = ap.parse_args()
 
     proj = Path(a.project).resolve()
@@ -482,6 +495,10 @@ def main():
     work, out = proj / "work", proj / "output"
     work.mkdir(exist_ok=True)
     out.mkdir(exist_ok=True)
+    if a.sheet_only:
+        write_sheet(spec, out, {})
+        print(f"sheet: {out / 'clips.md'}")
+        return
     fonts_dir = proj / "fonts"
     fonts = {"display": "Anton", "caption": spec.get("caption_font", "Montserrat ExtraBold")}
     tpath = work / "transcript.json"
