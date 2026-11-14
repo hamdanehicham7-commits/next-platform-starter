@@ -2,107 +2,827 @@
   "source": "source/source.mp4",
   "credit": "Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY",
   "chip": "GTA VI",
-  "note": "Time ranges come from an automated scene analysis on a 2-second grid; snap them to the real cuts (work/scenes.json) once the source file is available.",
+  "src_crop": [
+    0,
+    40,
+    1280,
+    640
+  ],
+  "layout": "classic",
+  "focus_track": [
+    [
+      2.03,
+      0.36
+    ],
+    [
+      3.7,
+      0.5,
+      "pan"
+    ],
+    [
+      4.4,
+      0.42
+    ],
+    [
+      6.33,
+      0.42
+    ],
+    [
+      8.3,
+      0.62,
+      "pan"
+    ],
+    [
+      9.33,
+      0.55
+    ],
+    [
+      11.27,
+      0.66
+    ],
+    [
+      12.1,
+      0.62,
+      "pan"
+    ],
+    [
+      13.57,
+      0.5
+    ],
+    [
+      14.53,
+      0.5
+    ],
+    [
+      18.33,
+      0.42
+    ],
+    [
+      20.53,
+      0.45
+    ],
+    [
+      21.7,
+      0.5
+    ],
+    [
+      25.73,
+      0.46
+    ],
+    [
+      27.2,
+      0.55
+    ],
+    [
+      28.77,
+      0.55
+    ],
+    [
+      29.8,
+      0.48
+    ],
+    [
+      32.17,
+      0.42
+    ],
+    [
+      33.0,
+      0.5
+    ],
+    [
+      34.43,
+      0.5
+    ],
+    [
+      35.83,
+      0.45
+    ],
+    [
+      37.37,
+      0.58
+    ],
+    [
+      38.37,
+      0.5
+    ],
+    [
+      39.8,
+      0.46
+    ],
+    [
+      41.7,
+      0.5
+    ],
+    [
+      42.8,
+      0.5
+    ],
+    [
+      44.43,
+      0.55
+    ],
+    [
+      46.33,
+      0.5
+    ],
+    [
+      48.27,
+      0.45
+    ],
+    [
+      50.0,
+      0.38,
+      "pan"
+    ],
+    [
+      50.13,
+      0.48
+    ],
+    [
+      50.7,
+      0.6,
+      "pan"
+    ],
+    [
+      50.73,
+      0.48
+    ],
+    [
+      52.33,
+      0.62
+    ],
+    [
+      53.57,
+      0.6
+    ],
+    [
+      54.53,
+      0.42
+    ],
+    [
+      55.8,
+      0.34,
+      "pan"
+    ],
+    [
+      56.43,
+      0.5
+    ],
+    [
+      57.87,
+      0.62
+    ],
+    [
+      59.27,
+      0.52
+    ],
+    [
+      60.23,
+      0.48
+    ],
+    [
+      61.07,
+      0.47
+    ],
+    [
+      62.53,
+      0.52
+    ],
+    [
+      63.4,
+      0.42
+    ],
+    [
+      64.23,
+      0.56
+    ],
+    [
+      66.43,
+      0.57
+    ],
+    [
+      67.9,
+      0.6
+    ],
+    [
+      69.3,
+      0.55
+    ],
+    [
+      70.23,
+      0.58
+    ],
+    [
+      70.93,
+      0.5
+    ],
+    [
+      71.43,
+      0.5
+    ],
+    [
+      72.13,
+      0.5
+    ],
+    [
+      73.17,
+      0.5
+    ]
+  ],
+  "words": [
+    [
+      2.67,
+      3.07,
+      "I"
+    ],
+    [
+      3.07,
+      3.17,
+      "got"
+    ],
+    [
+      3.17,
+      3.31,
+      "in"
+    ],
+    [
+      3.31,
+      3.41,
+      "some"
+    ],
+    [
+      3.41,
+      3.65,
+      "trouble"
+    ],
+    [
+      3.65,
+      3.85,
+      "in"
+    ],
+    [
+      3.85,
+      3.93,
+      "the"
+    ],
+    [
+      3.93,
+      4.15,
+      "army."
+    ],
+    [
+      4.67,
+      5.13,
+      "Didn't"
+    ],
+    [
+      5.13,
+      5.19,
+      "leave"
+    ],
+    [
+      5.19,
+      5.29,
+      "on"
+    ],
+    [
+      5.29,
+      5.37,
+      "the"
+    ],
+    [
+      5.37,
+      5.53,
+      "best"
+    ],
+    [
+      5.53,
+      5.67,
+      "of"
+    ],
+    [
+      5.67,
+      5.99,
+      "terms."
+    ],
+    [
+      6.68,
+      7.14,
+      "They"
+    ],
+    [
+      7.14,
+      7.32,
+      "don't"
+    ],
+    [
+      7.32,
+      7.42,
+      "give"
+    ],
+    [
+      7.42,
+      7.68,
+      "loans"
+    ],
+    [
+      7.68,
+      7.94,
+      "or"
+    ],
+    [
+      7.94,
+      8.38,
+      "anything"
+    ],
+    [
+      8.38,
+      8.72,
+      "to"
+    ],
+    [
+      8.72,
+      8.92,
+      "people"
+    ],
+    [
+      8.92,
+      9.12,
+      "like"
+    ],
+    [
+      9.12,
+      9.26,
+      "me."
+    ],
+    [
+      9.78,
+      10.24,
+      "This"
+    ],
+    [
+      10.24,
+      10.5,
+      "is"
+    ],
+    [
+      10.5,
+      10.76,
+      "a"
+    ],
+    [
+      10.76,
+      11.16,
+      "free"
+    ],
+    [
+      11.16,
+      11.5,
+      "call"
+    ],
+    [
+      11.5,
+      12.08,
+      "from"
+    ],
+    [
+      12.08,
+      12.72,
+      "Lucia"
+    ],
+    [
+      12.72,
+      13.22,
+      "Caminos."
+    ],
+    [
+      62.2,
+      62.56,
+      "Are"
+    ],
+    [
+      62.56,
+      62.66,
+      "we"
+    ],
+    [
+      62.66,
+      62.84,
+      "gonna"
+    ],
+    [
+      62.84,
+      62.92,
+      "be"
+    ],
+    [
+      62.92,
+      63.18,
+      "okay?"
+    ],
+    [
+      64.18,
+      64.54,
+      "We"
+    ],
+    [
+      64.54,
+      64.8,
+      "stuck"
+    ],
+    [
+      64.8,
+      65.24,
+      "together"
+    ],
+    [
+      65.24,
+      65.46,
+      "through"
+    ],
+    [
+      65.46,
+      65.76,
+      "everything."
+    ],
+    [
+      66.16,
+      66.52,
+      "We"
+    ],
+    [
+      66.52,
+      66.64,
+      "just"
+    ],
+    [
+      66.64,
+      66.84,
+      "gotta"
+    ],
+    [
+      66.84,
+      66.94,
+      "get"
+    ],
+    [
+      66.94,
+      67.12,
+      "through"
+    ],
+    [
+      67.12,
+      67.24,
+      "it."
+    ],
+    [
+      78.55,
+      79.18,
+      "Grand"
+    ],
+    [
+      79.18,
+      79.52,
+      "Theft"
+    ],
+    [
+      79.52,
+      79.68,
+      "Auto"
+    ],
+    [
+      79.68,
+      80.0,
+      "VI,"
+    ],
+    [
+      80.24,
+      80.56,
+      "coming"
+    ],
+    [
+      80.56,
+      81.05,
+      "November"
+    ],
+    [
+      81.05,
+      81.6,
+      "19th."
+    ]
+  ],
   "clips": [
     {
-      "id": "01", "slug": "jasons-past",
-      "start": 0.0, "end": 14.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["JASON'S PAST", "REVEALED"],
+      "id": "01",
+      "slug": "jasons-dark-past",
+      "start": 2.05,
+      "end": 14.5,
+      "hook": [
+        "JASON'S",
+        "DARK PAST"
+      ],
       "captions": "auto",
-      "thumb": {"t": 11.0, "lines": ["JASON'S", "DARK PAST"], "side": "left", "focus_x": 0.6},
-      "title": "Jason's Past REVEALED 😳 Then Lucia Calls… | GTA 6 Launch Trailer",
-      "description": "The GTA 6 launch trailer opens with Jason admitting he \"got in some trouble in the army\" and that nobody gives loans to people like him. He's polishing boats at a marina when the phone rings: a free call from Lucia Caminos. This is where it all starts.",
-      "tags": ["#GTA6", "#GTAVI", "#Jason", "#Lucia", "#RockstarGames", "#Shorts"]
+      "thumb": {
+        "t": 12.4,
+        "lines": [
+          "JASON'S",
+          "DARK PAST"
+        ],
+        "side": "left",
+        "zoom": 1.15,
+        "focus_x": 0.52,
+        "focus_y": 0.45
+      },
+      "title": "Jason's Dark Past 😳 Then Lucia Calls… | GTA 6 Launch Trailer",
+      "description": "\"I got in some trouble in the army. Didn't leave on the best of terms.\" The GTA 6 launch trailer opens in the Keys with Jason polishing boats at Brian's Marina — until his phone rings: a free call from Lucia Caminos. This is where it all starts.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Jason",
+        "#Lucia",
+        "#RockstarGames",
+        "#Shorts"
+      ]
     },
     {
-      "id": "02", "slug": "vice-city-is-back",
-      "start": 14.0, "end": 25.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["VICE CITY", "IS BACK"],
+      "id": "02",
+      "slug": "welcome-to-vice-city",
+      "start": 14.53,
+      "end": 20.5,
+      "hook": [
+        "WELCOME TO",
+        "VICE CITY"
+      ],
       "captions": null,
-      "thumb": {"t": 21.5, "lines": ["VICE CITY", "IS BACK"], "side": "left"},
-      "title": "Vice City Has NEVER Looked This Good 🌴 GTA 6",
-      "description": "The music kicks in and Vice City lights up: the skyline at night, a crew in a green convertible, an iguana under the overpass and a pink-and-orange sunset over the water. Eleven seconds that show why everyone is waiting for November 19.",
-      "tags": ["#GTA6", "#GTAVI", "#ViceCity", "#Leonida", "#RockstarGames", "#Shorts"]
+      "thumb": {
+        "t": 19.3,
+        "lines": [
+          "WELCOME TO",
+          "VICE CITY"
+        ],
+        "side": "bottom"
+      },
+      "title": "Welcome to Vice City 🌴 GTA 6 Launch Trailer",
+      "description": "\"Rockstar Games presents\" — and the music kicks in. Vice City glows at night, then a crew rolls up in a green lowrider with a spider-web paint job. Six seconds and you already know what kind of city this is.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#ViceCity",
+        "#Leonida",
+        "#RockstarGames",
+        "#Shorts"
+      ]
     },
     {
-      "id": "03", "slug": "the-vault-heist",
-      "start": 25.0, "end": 37.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["THE VAULT", "HEIST"],
+      "id": "03",
+      "slug": "the-wait-is-over",
+      "start": 20.53,
+      "end": 27.17,
+      "hook": [
+        "THE WAIT",
+        "IS OVER"
+      ],
       "captions": null,
-      "thumb": {"t": 36.0, "lines": ["THE VAULT", "HEIST"], "side": "left"},
+      "thumb": {
+        "t": 25.3,
+        "lines": [
+          "THE WAIT",
+          "IS OVER"
+        ],
+        "side": "left"
+      },
+      "title": "The Wait Is Finally OVER 🌅 GTA 6 Logo Reveal",
+      "description": "An iguana on the highway, the GTA VI logo over a pink Vice City sunset, and Lucia leaning out of the convertible while Jason drives. After all these years it's really happening — November 19.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#ViceCity",
+        "#Lucia",
+        "#GTA6Trailer",
+        "#Shorts"
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "the-vault-heist",
+      "start": 27.2,
+      "end": 35.8,
+      "hook": [
+        "THE VAULT",
+        "HEIST"
+      ],
+      "captions": null,
+      "thumb": {
+        "t": 35.0,
+        "lines": [
+          "THE VAULT",
+          "HEIST"
+        ],
+        "side": "left",
+        "zoom": 1.15,
+        "focus_x": 0.38
+      },
       "title": "The GTA 6 Heist Crew Goes ALL IN 💰 (Vault Scene)",
-      "description": "Tactical gear in the swamp at sunset, brass knuckles, a night jump out of a helicopter, an airboat through the marsh — and then two silhouettes walking through a giant vault door with paper flying everywhere. The heists in GTA 6 look huge.",
-      "tags": ["#GTA6", "#GTAVI", "#Heist", "#GTA6Trailer", "#RockstarGames", "#Shorts"]
+      "description": "Armed men wading through the swamp at sunset, brass knuckles under an EXIT sign, an airboat tearing through the marsh — and two silhouettes walking through a giant vault door with paper flying everywhere. The jobs in GTA 6 look huge.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Heist",
+        "#GTA6Trailer",
+        "#RockstarGames",
+        "#Shorts"
+      ]
     },
     {
-      "id": "04", "slug": "jason-and-lucia",
-      "start": 37.0, "end": 45.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["JASON", "& LUCIA"],
+      "id": "05",
+      "slug": "jason-and-lucia",
+      "start": 35.83,
+      "end": 44.4,
+      "hook": [
+        "JASON",
+        "& LUCIA"
+      ],
       "captions": null,
-      "thumb": {"t": 38.0, "lines": ["JASON", "& LUCIA"], "side": "left"},
-      "title": "Jason & Lucia: Partners in Crime ❤️‍🔥 GTA 6",
-      "description": "A quiet sunset in an apartment over the ocean, a packed neon club, a truck racing under an airplane wing, and the two of them side by side in a container yard. Love story or crime story? In GTA 6 it's both.",
-      "tags": ["#GTA6", "#GTAVI", "#Jason", "#Lucia", "#ViceCity", "#Shorts"]
+      "thumb": {
+        "t": 40.7,
+        "lines": [
+          "JASON",
+          "& LUCIA"
+        ],
+        "side": "right",
+        "focus_x": 0.62,
+        "box": [
+          850,
+          170,
+          1230,
+          660
+        ],
+        "cover_x": 0.45
+      },
+      "title": "Jason & Lucia: Love and Crime in Vice City ❤️‍🔥 GTA 6",
+      "description": "A sunset in an apartment over the ocean, a neon club, a truck racing under an airplane wing — and Jason and Lucia side by side against a red sports car. Then a bar fight, and a kiss in the dark. Love story or crime story? In GTA 6 it's both.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Jason",
+        "#Lucia",
+        "#ViceCity",
+        "#Shorts"
+      ]
     },
     {
-      "id": "05", "slug": "vice-city-after-dark",
-      "start": 45.0, "end": 53.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["VICE CITY", "AFTER DARK"],
+      "id": "06",
+      "slug": "insane-stunts",
+      "start": 44.43,
+      "end": 52.3,
+      "hook": [
+        "CARS, COPS",
+        "& STUNTS"
+      ],
       "captions": null,
-      "thumb": {"t": 50.0, "lines": ["AFTER", "DARK"], "side": "left"},
-      "title": "Vice City After Dark Is WILD 🪩 GTA 6 Launch Trailer",
-      "description": "A bar fight, a tense moment against a tiled wall, two performers on stage under pink lights and a red sports car tearing through the city at night. Vice City nightlife looks dangerous in the best way.",
-      "tags": ["#GTA6", "#GTAVI", "#ViceCity", "#Nightlife", "#RockstarGames", "#Shorts"]
+      "thumb": {
+        "t": 49.3,
+        "lines": [
+          "INSANE",
+          "JUMP"
+        ],
+        "side": "right",
+        "zoom": 1.15,
+        "focus_x": 0.565,
+        "focus_y": 0.49,
+        "cover_x": 0.42
+      },
+      "title": "GTA 6 Stunts Look INSANE 🏍️ Supercars, Cops & a Huge Jump",
+      "description": "Pink lights on stage, supercars lined up on the strip, a police cruiser sliding past the palm trees, a dirt bike wheelie that turns into a massive jump — and it ends on a blinking ankle monitor. The streets of Vice City never slow down.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Stunts",
+        "#DirtBike",
+        "#RockstarGames",
+        "#Shorts"
+      ]
     },
     {
-      "id": "06", "slug": "insane-stunts",
-      "start": 53.0, "end": 61.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["INSANE", "STUNTS"],
+      "id": "07",
+      "slug": "pure-chaos",
+      "start": 52.33,
+      "end": 60.2,
+      "hook": [
+        "PURE",
+        "CHAOS"
+      ],
       "captions": null,
-      "thumb": {"t": 58.0, "lines": ["INSANE", "STUNTS"], "side": "left"},
-      "title": "GTA 6 Stunts Look INSANE 🏍️ Wheelies, Huge Jumps & Cops",
-      "description": "Police sirens through the palm trees, a dirt bike wheelie across a bridge, a massive jump into the sky and a motorcycle cutting through a dark alley. The bikes in GTA 6 are going to be a lot of fun.",
-      "tags": ["#GTA6", "#GTAVI", "#Stunts", "#DirtBike", "#RockstarGames", "#Shorts"]
+      "thumb": {
+        "t": 52.9,
+        "lines": [
+          "PURE",
+          "CHAOS"
+        ],
+        "side": "left"
+      },
+      "title": "8 Seconds of Pure CHAOS 💥 GTA 6 Launch Trailer",
+      "description": "A rooftop explosion over the skyline, green lasers in the dark, a wing walker on a biplane trailing pink smoke over a packed beach, a tattooed giant in the gym, a guy relaxing with a snake, and two pink balaclavas with gold rifles. Only in Vice City.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Explosion",
+        "#GTA6Trailer",
+        "#RockstarGames",
+        "#Shorts"
+      ]
     },
     {
-      "id": "07", "slug": "pure-chaos",
-      "start": 61.0, "end": 69.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["PURE", "CHAOS"],
-      "captions": null,
-      "thumb": {"t": 64.0, "lines": ["PURE", "CHAOS"], "side": "left"},
-      "title": "From Ankle Monitor to Pure CHAOS 💥 GTA 6",
-      "description": "A blinking ankle monitor, a rooftop explosion over the skyline, a full-auto shootout — and a wing walker on a biplane trailing red smoke over a crowded beach. Eight seconds, zero calm.",
-      "tags": ["#GTA6", "#GTAVI", "#Explosion", "#GTA6Trailer", "#RockstarGames", "#Shorts"]
-    },
-    {
-      "id": "08", "slug": "wildest-characters",
-      "start": 69.0, "end": 77.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["MEET THE", "WILD ONES"],
-      "captions": null,
-      "thumb": {"t": 74.0, "lines": ["GOLD GUNS", "PINK MASKS"], "side": "left"},
-      "title": "The Wildest Characters in GTA 6 🐍 Gold Guns & Pink Masks",
-      "description": "A tattooed giant in the gym, a guy relaxing with a huge snake, and two women in pink balaclavas holding gold rifles — then another explosion lights up the street. Vice City is full of characters you won't forget.",
-      "tags": ["#GTA6", "#GTAVI", "#Characters", "#ViceCity", "#RockstarGames", "#Shorts"]
-    },
-    {
-      "id": "09", "slug": "are-we-gonna-be-okay",
-      "start": 77.0, "end": 85.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["ARE WE GONNA", "BE OKAY?"],
+      "id": "08",
+      "slug": "are-we-gonna-be-okay",
+      "start": 60.23,
+      "end": 67.87,
+      "hook": [
+        "ARE WE GONNA",
+        "BE OKAY?"
+      ],
       "captions": "auto",
-      "thumb": {"t": 84.0, "lines": ["ARE WE GONNA", "BE OKAY?"], "side": "left"},
+      "thumb": {
+        "t": 62.9,
+        "lines": [
+          "ARE WE",
+          "GONNA BE",
+          "OKAY?"
+        ],
+        "side": "left",
+        "zoom": 1.25,
+        "focus_x": 0.36,
+        "focus_y": 0.42
+      },
       "title": "\"Are We Gonna Be Okay?\" 💔 GTA 6's Most Emotional Moment",
-      "description": "\"Are we gonna be okay?\" — \"We've stuck together through everything. We've just gotta get through this.\" In the middle of all the chaos, the launch trailer slows down for Jason and Lucia on a balcony at sunset.",
-      "tags": ["#GTA6", "#GTAVI", "#Jason", "#Lucia", "#GTA6Story", "#Shorts"]
+      "description": "\"Are we gonna be okay?\" — \"We stuck together through everything. We just gotta get through it.\" Explosions, a beating, a gun in the dark… and then the trailer slows down for Jason and Lucia on a balcony at sunset.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Jason",
+        "#Lucia",
+        "#GTA6Story",
+        "#Shorts"
+      ]
     },
     {
-      "id": "10", "slug": "the-final-moments",
-      "start": 85.0, "end": 99.0, "layout": "square", "focus": [[0, 0.5]],
-      "hook": ["THE FINAL", "MOMENTS"],
+      "id": "09",
+      "slug": "no-turning-back",
+      "start": 67.9,
+      "end": 75.45,
+      "hook": [
+        "NO TURNING",
+        "BACK"
+      ],
+      "captions": null,
+      "thumb": {
+        "t": 72.45,
+        "lines": [
+          "NO TURNING",
+          "BACK"
+        ],
+        "side": "bottom",
+        "cover_x": 0.42
+      },
+      "title": "GTA 6's Wildest 8 Seconds 🔥 Window Crash, Helicopter, Shootout",
+      "description": "Crashing through a skyscraper window, hanging from a helicopter over the city, a police chase in the dark, a sniper scope, Lucia opening fire — and a hand-in-hand fall into a neon pool. The last stretch of the launch trailer doesn't breathe.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#Action",
+        "#GTA6Trailer",
+        "#RockstarGames",
+        "#Shorts"
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "november-19",
+      "start": 73.17,
+      "end": 85.6,
+      "hook": [
+        "NOVEMBER 19",
+        "IT BEGINS"
+      ],
       "captions": "auto",
-      "thumb": {"t": 88.0, "lines": ["NOVEMBER", "19"], "side": "left"},
+      "thumb": {
+        "t": 74.4,
+        "lines": [
+          "NOVEMBER",
+          "19"
+        ],
+        "side": "bottom"
+      },
       "title": "GTA 6 Launch Trailer ENDING 🔥 November 19, 2026",
-      "description": "Crashing through a skyscraper window, hanging from a helicopter over the city, a police chase, a sniper scope — and a fall into a neon pool before the words everyone waited years for: Grand Theft Auto VI, November 19, 2026.",
-      "tags": ["#GTA6", "#GTAVI", "#November19", "#GTA6Trailer", "#RockstarGames", "#Shorts"]
+      "description": "Jason and Lucia fall hand in hand into a neon pool, the music cuts out, and the logo rises over Vice City at night: Grand Theft Auto VI, coming November 19, 2026. The wait is almost over.",
+      "tags": [
+        "#GTA6",
+        "#GTAVI",
+        "#November19",
+        "#GTA6Trailer",
+        "#RockstarGames",
+        "#Shorts"
+      ]
     }
   ]
 }

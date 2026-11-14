@@ -7,6 +7,13 @@ Source: "Grand Theft Auto VI Launch Trailer" (Rockstar Games),
 https://youtu.be/rz1B4B2yBZY — the video file itself is not in the repo
 (`source/` is git-ignored). Put it at `source/source.mp4`.
 
+## Output
+
+`output/` holds the 10 finished clips (`clipNN_<name>.mp4`, 1080x1920), a 16:9
+thumbnail (`_thumb.jpg`) and a 9:16 cover (`_cover.jpg`) for each, and
+`clips.md` with every title, description and hashtag set. `clips.json` is the
+edit list they were rendered from.
+
 ## Setup
 
     pip install faster-whisper numpy pillow fonttools

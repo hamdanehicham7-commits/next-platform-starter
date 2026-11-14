@@ -9,10 +9,14 @@ clips.json (in the project dir):
   "credit": "Footage: ... (c) ...",
   "handle": "@account",                    optional, small tag at the bottom
   "chip": "GTA VI",                        small tag on thumbnails
+  "src_crop": [0, 40, 1280, 640],          optional: active picture area (removes letterbox bars)
+  "layout": "classic",                     default layout for all clips
+  "focus_track": [[2.03, 0.33], [3.6, 0.5, "pan"], ...]   optional: focus for the whole video (absolute times)
+  "words": [[2.67, 3.07, "I"], ...]        optional: hand-checked word timings used by captions "auto"
   "clips": [{
     "id": "01", "slug": "short-name",
     "start": 12.30, "end": 27.80,          seconds in the source
-    "layout": "square",                    full (9:16 crop) | tall (4:5) | square (1:1) | wide (16:9)
+    "layout": "square",                    full (9:16) | tall (4:5) | square (1:1) | classic (4:3) | wide (16:9)
     "focus": [[0, 0.5], [4.2, 0.35], [7.0, 0.6, "pan"]],
                                            [clip time, x centre 0..1, "cut" (default) | "pan"]
     "hook": ["LINE ONE", "LINE TWO"],      headline on the clip; last line is accented
@@ -109,6 +113,7 @@ GEOMETRY = {            # layout: (picture height, picture top, caption centre y
     "full": (1920, 0, 1400),
     "tall": (1350, 285, 1420),
     "square": (1080, 500, 1440),
+    "classic": (810, 555, 1470),
     "wide": (608, 656, 1360),
 }
 ANTON_LINE = 1.505      # libass font size / em (hhea ascent + descent)
@@ -217,6 +222,28 @@ def focus_expr(focus, iw, cw):
     return expr
 
 
+def clip_focus(spec, clip):
+    """Clip focus keyframes: its own, or the slice of the whole-video focus_track (absolute times)."""
+    if clip.get("focus"):
+        return clip["focus"]
+    track = spec.get("focus_track")
+    if not track:
+        return [[0, 0.5]]
+    s, e = float(clip["start"]), float(clip["end"])
+    before = [k for k in track if float(k[0]) <= s]
+    keys = (before[-1:] if before else [[s, 0.5]]) + [k for k in track if s < float(k[0]) < e]
+    return [[round(float(k[0]) - s, 3), k[1]] + list(k[2:3]) for k in keys]
+
+
+def spec_words(spec, start, end):
+    """Hand-checked word timings [[s, e, "word"], ...] (absolute) that fall inside the clip."""
+    out = []
+    for ws, we, w in spec.get("words", []):
+        if ws >= start - 0.05 and we <= end + 0.05:
+            out.append({"w": w, "s": max(0.0, ws - start), "e": min(end - start, we - start)})
+    return out
+
+
 def shade_png(path, fg_h):
     """Top/bottom dark gradients so text stays readable on bright footage."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -235,18 +262,24 @@ def shade_png(path, fg_h):
     img.save(path)
 
 
-def render_clip(src, clip, out_mp4, work, fonts, fonts_dir, transcript, handle, preview=False):
+def render_clip(src, clip, out_mp4, work, fonts, fonts_dir, transcript, spec, preview=False):
+    handle = spec.get("handle")
     iw, ih, fps = probe(src)
+    pre = ""
+    if spec.get("src_crop"):                            # e.g. remove letterbox bars: [x, y, w, h]
+        cx, cy, iw, ih = spec["src_crop"]
+        pre = f",crop={iw}:{ih}:{cx}:{cy}"
     start, end = float(clip["start"]), float(clip["end"])
     dur = round(end - start, 3)
-    layout = clip.get("layout", "square")
+    layout = clip.get("layout", spec.get("layout", "square"))
+    clip = dict(clip, layout=layout)
     fg_h, fg_y, _ = GEOMETRY[layout]
     cw = min(iw, int(round(ih * W / fg_h / 2)) * 2)
-    xexpr = focus_expr(clip.get("focus"), iw, cw)
+    xexpr = focus_expr(clip_focus(spec, clip), iw, cw)
 
     caps = clip.get("captions")
     if caps == "auto":
-        words = words_for_clip(transcript, start, end)
+        words = spec_words(spec, start, end) if spec.get("words") else words_for_clip(transcript, start, end)
     elif isinstance(caps, list):
         words = manual_words(caps)
     else:
@@ -259,14 +292,14 @@ def render_clip(src, clip, out_mp4, work, fonts, fonts_dir, transcript, handle, 
         shade_png(shade, fg_h)
 
     zoom = float(clip.get("zoom", 1.0))                 # extra punch-in on the foreground
-    fg = f"crop=w={cw}:h={ih}:x='{xexpr}':y=0,scale={W}:{fg_h}:flags=lanczos"
+    fg = f"crop=w={cw}:h={ih}:x='{xexpr}':y=0,scale={W}:{fg_h}:flags=lanczos,unsharp=5:5:0.6"
     if zoom > 1.0:
         fg = (f"crop=w={int(cw / zoom / 2) * 2}:h={int(ih / zoom / 2) * 2}:"
               f"x='({xexpr})+{(cw - cw / zoom) / 2:.1f}':y={(ih - ih / zoom) / 2:.1f},scale={W}:{fg_h}:flags=lanczos")
     ass_esc = str(ass).replace(":", "\\:")
     fdir_esc = str(fonts_dir).replace(":", "\\:")
     fc = (
-        f"[0:v]fps={fps:.3f},split=2[a][b];"
+        f"[0:v]fps={fps:.3f}{pre},split=2[a][b];"
         f"[a]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,"
         f"scale={W}:{H}:flags=bicubic,eq=brightness=-0.16:saturation=1.2[bg];"
         f"[b]{fg}[fg];"
@@ -293,10 +326,14 @@ def render_clip(src, clip, out_mp4, work, fonts, fonts_dir, transcript, handle, 
 
 # ---------------------------------------------------------------- thumbnails
 
-def grab_frame(src, t, out_png):
+def grab_frame(src, t, out_png, src_crop=None):
     run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-ss", f"{t:.3f}", "-i", str(src),
          "-frames:v", "1", "-q:v", "1", str(out_png)])
-    return Image.open(out_png).convert("RGB")
+    img = Image.open(out_png).convert("RGB")
+    if src_crop:
+        x, y, w, h = src_crop
+        img = img.crop((x, y, x + w, y + h))
+    return img
 
 
 def cover(img, w, h, fx=0.5, fy=0.5, zoom=1.0):
@@ -413,7 +450,9 @@ def make_thumb(frame, clip, out_jpg, fonts_dir, chip):
             box, align = (580, 150, 1224, 664), "rm"
         else:
             box, align = (70, 400, 1210, 680), "cb"
-        draw_title(canvas, lines, box, align, anton, tilt=th.get("tilt", 0))
+        if th.get("box"):                               # custom text area [x0, y0, x1, y1]
+            box = tuple(th["box"])
+        draw_title(canvas, lines, box, th.get("align", align), anton, tilt=th.get("tilt", 0))
     if chip:
         draw_chip(canvas, chip, (56, 48) if side != "right" else (1280 - 56 - 230, 48), anton)
     canvas.paste(gradient(14, tw, PINK, YELLOW).rotate(90, expand=True), (0, thh - 14))
@@ -421,19 +460,24 @@ def make_thumb(frame, clip, out_jpg, fonts_dir, chip):
 
 
 def make_cover(frame, clip, out_jpg, fonts_dir, chip):
-    """1080x1920 vertical cover for Shorts / Reels / TikTok."""
+    """1080x1920 vertical cover: blurred fill, the picture in the middle, big text above."""
     th = clip.get("thumb", {})
     lines = th.get("lines") or clip.get("hook") or []
-    img = grade(cover(frame, W, H, th.get("cover_x", th.get("focus_x", 0.5)), 0.5))
-    canvas = img.convert("RGBA")
+    fx = th.get("cover_x", th.get("focus_x", 0.5))
+    bg = cover(frame, W, H, fx, 0.5).filter(ImageFilter.GaussianBlur(26))
+    bg = ImageEnhance.Brightness(ImageEnhance.Color(bg).enhance(1.25)).enhance(0.62)
+    canvas = bg.convert("RGBA")
+    pic_h, pic_y = 1080, 560
+    pic = grade(cover(frame, W, pic_h, fx, 0.5, th.get("cover_zoom", 1.0)))
+    canvas.paste(pic, (0, pic_y))
     dark = Image.new("RGBA", (W, H), (6, 4, 18, 255))
-    canvas.paste(dark, (0, 0), side_shade(W, H, "bottom", 235))
-    canvas.paste(dark, (0, 0), side_shade(W, H, "top", 120))
+    canvas.paste(dark, (0, 0), side_shade(W, H, "top", 150))
+    canvas.paste(dark, (0, 0), side_shade(W, H, "bottom", 170))
     anton = Path(fonts_dir) / "Anton-Regular.ttf"
     if lines:
-        draw_title(canvas, lines, (70, 1040, 1010, 1500), "cb", anton)
+        draw_title(canvas, lines, (60, 170, 1020, pic_y - 30), "cb", anton)
     if chip:
-        draw_chip(canvas, chip, (70, 250), anton, size=60)
+        draw_chip(canvas, chip, (60, pic_y + pic_h + 40), anton, size=60)
     canvas.convert("RGB").save(out_jpg, quality=92, optimize=True)
 
 
@@ -513,11 +557,11 @@ def main():
         info = {}
         if not a.no_video:
             mp4 = out / (base + ("_preview.mp4" if a.preview else ".mp4"))
-            info["dur"] = render_clip(src, c, mp4, work, fonts, fonts_dir, transcript, spec.get("handle"), a.preview)
+            info["dur"] = render_clip(src, c, mp4, work, fonts, fonts_dir, transcript, spec, a.preview)
             print(f"clip {c['id']}: {mp4.name}  {info['dur']:.1f} s  {mp4.stat().st_size / 1e6:.1f} MB", flush=True)
         if not a.no_thumbs:
             t = float(c.get("thumb", {}).get("t", (c["start"] + c["end"]) / 2))
-            frame = grab_frame(src, t, work / f"frame{c['id']}.png")
+            frame = grab_frame(src, t, work / f"frame{c['id']}.png", spec.get("src_crop"))
             make_thumb(frame, c, out / f"{base}_thumb.jpg", fonts_dir, spec.get("chip"))
             make_cover(frame, c, out / f"{base}_cover.jpg", fonts_dir, spec.get("chip"))
             print(f"clip {c['id']}: thumbnail + cover", flush=True)

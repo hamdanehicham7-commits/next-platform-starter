@@ -1,54 +1,72 @@
 # GTA VI clips — titles, descriptions, thumbnails
 
-> Time ranges come from an automated scene analysis on a 2-second grid; snap them to the real cuts (work/scenes.json) once the source file is available.
+## Clip 01 — Jason's Dark Past 😳 Then Lucia Calls… | GTA 6 Launch Trailer
 
-## Clip 01 — Jason's Past REVEALED 😳 Then Lucia Calls… | GTA 6 Launch Trailer
-
-- **Source time:** 0:00.0 – 0:14.0 (14 s)
-- **Video:** `clip01_jasons-past.mp4` _(not rendered yet)_
-- **Headline on the clip:** JASON'S PAST / REVEALED
-- **Thumbnail (16:9):** `clip01_jasons-past_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip01_jasons-past_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** JASON'S / DARK PAST — frame at 0:11.0
+- **Source time:** 0:02.0 – 0:14.5 (12 s)
+- **Video:** `clip01_jasons-dark-past.mp4`
+- **Headline on the clip:** JASON'S / DARK PAST
+- **Thumbnail (16:9):** `clip01_jasons-dark-past_thumb.jpg` · **Cover (9:16):** `clip01_jasons-dark-past_cover.jpg`
+- **Thumbnail text:** JASON'S / DARK PAST — frame at 0:12.4
 
 **Title**
 
-Jason's Past REVEALED 😳 Then Lucia Calls… | GTA 6 Launch Trailer
+Jason's Dark Past 😳 Then Lucia Calls… | GTA 6 Launch Trailer
 
 **Description**
 
-The GTA 6 launch trailer opens with Jason admitting he "got in some trouble in the army" and that nobody gives loans to people like him. He's polishing boats at a marina when the phone rings: a free call from Lucia Caminos. This is where it all starts.
+"I got in some trouble in the army. Didn't leave on the best of terms." The GTA 6 launch trailer opens in the Keys with Jason polishing boats at Brian's Marina — until his phone rings: a free call from Lucia Caminos. This is where it all starts.
 
 #GTA6 #GTAVI #Jason #Lucia #RockstarGames #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
-## Clip 02 — Vice City Has NEVER Looked This Good 🌴 GTA 6
+## Clip 02 — Welcome to Vice City 🌴 GTA 6 Launch Trailer
 
-- **Source time:** 0:14.0 – 0:25.0 (11 s)
-- **Video:** `clip02_vice-city-is-back.mp4` _(not rendered yet)_
-- **Headline on the clip:** VICE CITY / IS BACK
-- **Thumbnail (16:9):** `clip02_vice-city-is-back_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip02_vice-city-is-back_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** VICE CITY / IS BACK — frame at 0:21.5
+- **Source time:** 0:14.5 – 0:20.5 (6 s)
+- **Video:** `clip02_welcome-to-vice-city.mp4`
+- **Headline on the clip:** WELCOME TO / VICE CITY
+- **Thumbnail (16:9):** `clip02_welcome-to-vice-city_thumb.jpg` · **Cover (9:16):** `clip02_welcome-to-vice-city_cover.jpg`
+- **Thumbnail text:** WELCOME TO / VICE CITY — frame at 0:19.3
 
 **Title**
 
-Vice City Has NEVER Looked This Good 🌴 GTA 6
+Welcome to Vice City 🌴 GTA 6 Launch Trailer
 
 **Description**
 
-The music kicks in and Vice City lights up: the skyline at night, a crew in a green convertible, an iguana under the overpass and a pink-and-orange sunset over the water. Eleven seconds that show why everyone is waiting for November 19.
+"Rockstar Games presents" — and the music kicks in. Vice City glows at night, then a crew rolls up in a green lowrider with a spider-web paint job. Six seconds and you already know what kind of city this is.
 
 #GTA6 #GTAVI #ViceCity #Leonida #RockstarGames #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
-## Clip 03 — The GTA 6 Heist Crew Goes ALL IN 💰 (Vault Scene)
+## Clip 03 — The Wait Is Finally OVER 🌅 GTA 6 Logo Reveal
 
-- **Source time:** 0:25.0 – 0:37.0 (12 s)
-- **Video:** `clip03_the-vault-heist.mp4` _(not rendered yet)_
+- **Source time:** 0:20.5 – 0:27.2 (7 s)
+- **Video:** `clip03_the-wait-is-over.mp4`
+- **Headline on the clip:** THE WAIT / IS OVER
+- **Thumbnail (16:9):** `clip03_the-wait-is-over_thumb.jpg` · **Cover (9:16):** `clip03_the-wait-is-over_cover.jpg`
+- **Thumbnail text:** THE WAIT / IS OVER — frame at 0:25.3
+
+**Title**
+
+The Wait Is Finally OVER 🌅 GTA 6 Logo Reveal
+
+**Description**
+
+An iguana on the highway, the GTA VI logo over a pink Vice City sunset, and Lucia leaning out of the convertible while Jason drives. After all these years it's really happening — November 19.
+
+#GTA6 #GTAVI #ViceCity #Lucia #GTA6Trailer #Shorts
+
+Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
+
+## Clip 04 — The GTA 6 Heist Crew Goes ALL IN 💰 (Vault Scene)
+
+- **Source time:** 0:27.2 – 0:35.8 (9 s)
+- **Video:** `clip04_the-vault-heist.mp4`
 - **Headline on the clip:** THE VAULT / HEIST
-- **Thumbnail (16:9):** `clip03_the-vault-heist_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip03_the-vault-heist_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** THE VAULT / HEIST — frame at 0:36.0
+- **Thumbnail (16:9):** `clip04_the-vault-heist_thumb.jpg` · **Cover (9:16):** `clip04_the-vault-heist_cover.jpg`
+- **Thumbnail text:** THE VAULT / HEIST — frame at 0:35.0
 
 **Title**
 
@@ -56,119 +74,79 @@ The GTA 6 Heist Crew Goes ALL IN 💰 (Vault Scene)
 
 **Description**
 
-Tactical gear in the swamp at sunset, brass knuckles, a night jump out of a helicopter, an airboat through the marsh — and then two silhouettes walking through a giant vault door with paper flying everywhere. The heists in GTA 6 look huge.
+Armed men wading through the swamp at sunset, brass knuckles under an EXIT sign, an airboat tearing through the marsh — and two silhouettes walking through a giant vault door with paper flying everywhere. The jobs in GTA 6 look huge.
 
 #GTA6 #GTAVI #Heist #GTA6Trailer #RockstarGames #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
-## Clip 04 — Jason & Lucia: Partners in Crime ❤️‍🔥 GTA 6
+## Clip 05 — Jason & Lucia: Love and Crime in Vice City ❤️‍🔥 GTA 6
 
-- **Source time:** 0:37.0 – 0:45.0 (8 s)
-- **Video:** `clip04_jason-and-lucia.mp4` _(not rendered yet)_
+- **Source time:** 0:35.8 – 0:44.4 (9 s)
+- **Video:** `clip05_jason-and-lucia.mp4`
 - **Headline on the clip:** JASON / & LUCIA
-- **Thumbnail (16:9):** `clip04_jason-and-lucia_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip04_jason-and-lucia_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** JASON / & LUCIA — frame at 0:38.0
+- **Thumbnail (16:9):** `clip05_jason-and-lucia_thumb.jpg` · **Cover (9:16):** `clip05_jason-and-lucia_cover.jpg`
+- **Thumbnail text:** JASON / & LUCIA — frame at 0:40.7
 
 **Title**
 
-Jason & Lucia: Partners in Crime ❤️‍🔥 GTA 6
+Jason & Lucia: Love and Crime in Vice City ❤️‍🔥 GTA 6
 
 **Description**
 
-A quiet sunset in an apartment over the ocean, a packed neon club, a truck racing under an airplane wing, and the two of them side by side in a container yard. Love story or crime story? In GTA 6 it's both.
+A sunset in an apartment over the ocean, a neon club, a truck racing under an airplane wing — and Jason and Lucia side by side against a red sports car. Then a bar fight, and a kiss in the dark. Love story or crime story? In GTA 6 it's both.
 
 #GTA6 #GTAVI #Jason #Lucia #ViceCity #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
-## Clip 05 — Vice City After Dark Is WILD 🪩 GTA 6 Launch Trailer
+## Clip 06 — GTA 6 Stunts Look INSANE 🏍️ Supercars, Cops & a Huge Jump
 
-- **Source time:** 0:45.0 – 0:53.0 (8 s)
-- **Video:** `clip05_vice-city-after-dark.mp4` _(not rendered yet)_
-- **Headline on the clip:** VICE CITY / AFTER DARK
-- **Thumbnail (16:9):** `clip05_vice-city-after-dark_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip05_vice-city-after-dark_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** AFTER / DARK — frame at 0:50.0
-
-**Title**
-
-Vice City After Dark Is WILD 🪩 GTA 6 Launch Trailer
-
-**Description**
-
-A bar fight, a tense moment against a tiled wall, two performers on stage under pink lights and a red sports car tearing through the city at night. Vice City nightlife looks dangerous in the best way.
-
-#GTA6 #GTAVI #ViceCity #Nightlife #RockstarGames #Shorts
-
-Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
-
-## Clip 06 — GTA 6 Stunts Look INSANE 🏍️ Wheelies, Huge Jumps & Cops
-
-- **Source time:** 0:53.0 – 1:01.0 (8 s)
-- **Video:** `clip06_insane-stunts.mp4` _(not rendered yet)_
-- **Headline on the clip:** INSANE / STUNTS
-- **Thumbnail (16:9):** `clip06_insane-stunts_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip06_insane-stunts_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** INSANE / STUNTS — frame at 0:58.0
+- **Source time:** 0:44.4 – 0:52.3 (8 s)
+- **Video:** `clip06_insane-stunts.mp4`
+- **Headline on the clip:** CARS, COPS / & STUNTS
+- **Thumbnail (16:9):** `clip06_insane-stunts_thumb.jpg` · **Cover (9:16):** `clip06_insane-stunts_cover.jpg`
+- **Thumbnail text:** INSANE / JUMP — frame at 0:49.3
 
 **Title**
 
-GTA 6 Stunts Look INSANE 🏍️ Wheelies, Huge Jumps & Cops
+GTA 6 Stunts Look INSANE 🏍️ Supercars, Cops & a Huge Jump
 
 **Description**
 
-Police sirens through the palm trees, a dirt bike wheelie across a bridge, a massive jump into the sky and a motorcycle cutting through a dark alley. The bikes in GTA 6 are going to be a lot of fun.
+Pink lights on stage, supercars lined up on the strip, a police cruiser sliding past the palm trees, a dirt bike wheelie that turns into a massive jump — and it ends on a blinking ankle monitor. The streets of Vice City never slow down.
 
 #GTA6 #GTAVI #Stunts #DirtBike #RockstarGames #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
-## Clip 07 — From Ankle Monitor to Pure CHAOS 💥 GTA 6
+## Clip 07 — 8 Seconds of Pure CHAOS 💥 GTA 6 Launch Trailer
 
-- **Source time:** 1:01.0 – 1:09.0 (8 s)
-- **Video:** `clip07_pure-chaos.mp4` _(not rendered yet)_
+- **Source time:** 0:52.3 – 1:00.2 (8 s)
+- **Video:** `clip07_pure-chaos.mp4`
 - **Headline on the clip:** PURE / CHAOS
-- **Thumbnail (16:9):** `clip07_pure-chaos_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip07_pure-chaos_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** PURE / CHAOS — frame at 1:04.0
+- **Thumbnail (16:9):** `clip07_pure-chaos_thumb.jpg` · **Cover (9:16):** `clip07_pure-chaos_cover.jpg`
+- **Thumbnail text:** PURE / CHAOS — frame at 0:52.9
 
 **Title**
 
-From Ankle Monitor to Pure CHAOS 💥 GTA 6
+8 Seconds of Pure CHAOS 💥 GTA 6 Launch Trailer
 
 **Description**
 
-A blinking ankle monitor, a rooftop explosion over the skyline, a full-auto shootout — and a wing walker on a biplane trailing red smoke over a crowded beach. Eight seconds, zero calm.
+A rooftop explosion over the skyline, green lasers in the dark, a wing walker on a biplane trailing pink smoke over a packed beach, a tattooed giant in the gym, a guy relaxing with a snake, and two pink balaclavas with gold rifles. Only in Vice City.
 
 #GTA6 #GTAVI #Explosion #GTA6Trailer #RockstarGames #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
-## Clip 08 — The Wildest Characters in GTA 6 🐍 Gold Guns & Pink Masks
+## Clip 08 — "Are We Gonna Be Okay?" 💔 GTA 6's Most Emotional Moment
 
-- **Source time:** 1:09.0 – 1:17.0 (8 s)
-- **Video:** `clip08_wildest-characters.mp4` _(not rendered yet)_
-- **Headline on the clip:** MEET THE / WILD ONES
-- **Thumbnail (16:9):** `clip08_wildest-characters_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip08_wildest-characters_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** GOLD GUNS / PINK MASKS — frame at 1:14.0
-
-**Title**
-
-The Wildest Characters in GTA 6 🐍 Gold Guns & Pink Masks
-
-**Description**
-
-A tattooed giant in the gym, a guy relaxing with a huge snake, and two women in pink balaclavas holding gold rifles — then another explosion lights up the street. Vice City is full of characters you won't forget.
-
-#GTA6 #GTAVI #Characters #ViceCity #RockstarGames #Shorts
-
-Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
-
-## Clip 09 — "Are We Gonna Be Okay?" 💔 GTA 6's Most Emotional Moment
-
-- **Source time:** 1:17.0 – 1:25.0 (8 s)
-- **Video:** `clip09_are-we-gonna-be-okay.mp4` _(not rendered yet)_
+- **Source time:** 1:00.2 – 1:07.9 (8 s)
+- **Video:** `clip08_are-we-gonna-be-okay.mp4`
 - **Headline on the clip:** ARE WE GONNA / BE OKAY?
-- **Thumbnail (16:9):** `clip09_are-we-gonna-be-okay_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip09_are-we-gonna-be-okay_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** ARE WE GONNA / BE OKAY? — frame at 1:24.0
+- **Thumbnail (16:9):** `clip08_are-we-gonna-be-okay_thumb.jpg` · **Cover (9:16):** `clip08_are-we-gonna-be-okay_cover.jpg`
+- **Thumbnail text:** ARE WE / GONNA BE / OKAY? — frame at 1:02.9
 
 **Title**
 
@@ -176,19 +154,39 @@ Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.
 
 **Description**
 
-"Are we gonna be okay?" — "We've stuck together through everything. We've just gotta get through this." In the middle of all the chaos, the launch trailer slows down for Jason and Lucia on a balcony at sunset.
+"Are we gonna be okay?" — "We stuck together through everything. We just gotta get through it." Explosions, a beating, a gun in the dark… and then the trailer slows down for Jason and Lucia on a balcony at sunset.
 
 #GTA6 #GTAVI #Jason #Lucia #GTA6Story #Shorts
 
 Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
 
+## Clip 09 — GTA 6's Wildest 8 Seconds 🔥 Window Crash, Helicopter, Shootout
+
+- **Source time:** 1:07.9 – 1:15.5 (8 s)
+- **Video:** `clip09_no-turning-back.mp4`
+- **Headline on the clip:** NO TURNING / BACK
+- **Thumbnail (16:9):** `clip09_no-turning-back_thumb.jpg` · **Cover (9:16):** `clip09_no-turning-back_cover.jpg`
+- **Thumbnail text:** NO TURNING / BACK — frame at 1:12.5
+
+**Title**
+
+GTA 6's Wildest 8 Seconds 🔥 Window Crash, Helicopter, Shootout
+
+**Description**
+
+Crashing through a skyscraper window, hanging from a helicopter over the city, a police chase in the dark, a sniper scope, Lucia opening fire — and a hand-in-hand fall into a neon pool. The last stretch of the launch trailer doesn't breathe.
+
+#GTA6 #GTAVI #Action #GTA6Trailer #RockstarGames #Shorts
+
+Footage: Grand Theft Auto VI Launch Trailer © Rockstar Games — https://youtu.be/rz1B4B2yBZY
+
 ## Clip 10 — GTA 6 Launch Trailer ENDING 🔥 November 19, 2026
 
-- **Source time:** 1:25.0 – 1:39.0 (14 s)
-- **Video:** `clip10_the-final-moments.mp4` _(not rendered yet)_
-- **Headline on the clip:** THE FINAL / MOMENTS
-- **Thumbnail (16:9):** `clip10_the-final-moments_thumb.jpg` _(not rendered yet)_ · **Cover (9:16):** `clip10_the-final-moments_cover.jpg` _(not rendered yet)_
-- **Thumbnail text:** NOVEMBER / 19 — frame at 1:28.0
+- **Source time:** 1:13.2 – 1:25.6 (12 s)
+- **Video:** `clip10_november-19.mp4`
+- **Headline on the clip:** NOVEMBER 19 / IT BEGINS
+- **Thumbnail (16:9):** `clip10_november-19_thumb.jpg` · **Cover (9:16):** `clip10_november-19_cover.jpg`
+- **Thumbnail text:** NOVEMBER / 19 — frame at 1:14.4
 
 **Title**
 
@@ -196,7 +194,7 @@ GTA 6 Launch Trailer ENDING 🔥 November 19, 2026
 
 **Description**
 
-Crashing through a skyscraper window, hanging from a helicopter over the city, a police chase, a sniper scope — and a fall into a neon pool before the words everyone waited years for: Grand Theft Auto VI, November 19, 2026.
+Jason and Lucia fall hand in hand into a neon pool, the music cuts out, and the logo rises over Vice City at night: Grand Theft Auto VI, coming November 19, 2026. The wait is almost over.
 
 #GTA6 #GTAVI #November19 #GTA6Trailer #RockstarGames #Shorts
 
